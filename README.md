@@ -15,7 +15,7 @@ Models the behavior of CPU and memory using inter-process communication in C to 
    The system stack resides at the end of system memory and grows down toward address 0.<br>
    There is no hardware enforcement of stack size.<br>
    The program ends when the End instruction is executed.  The 2 processes should end at that time.<br>
-   The user program cannot access system memory (exits with error message).<br>
+   The user program cannot access system memory (exits with error message).
    
 ### Memory
    It will consist of 2000 integer entries, 0-999 for the user program, 1000-1999 for system code.<br>
@@ -23,7 +23,7 @@ Models the behavior of CPU and memory using inter-process communication in C to 
        1. read(address) -  returns the value at the address<br>
        2. write(address, data) - writes the data to the address<br>
    Memory will read an input file containing a program into its array, before any CPU fetching begins.<br>
-   Note that the memory is simply storage; it has no real logic beyond reading and writing.<br>
+   Note that the memory is simply storage; it has no real logic beyond reading and writing.
  
  ### Timer
 A timer will interrupt the processor after every X instructions, where X is a command-line parameter.
@@ -40,7 +40,7 @@ A timer interrupt should cause execution at address 1000.<br>
 The int instruction should cause execution at address 1500.<br>
 The iret instruction returns from an interrupt.<br>
 Interrupts should be disabled during interrupt processing to avoid nested execution.<br>
-To make it easy, do not allow interrupts during system calls or vice versa<br>
+To make it easy, do not allow interrupts during system calls or vice versa
 
 ### Instruction Set
 
@@ -74,7 +74,7 @@ To make it easy, do not allow interrupts during system calls or vice versa<br>
 28 = Pop<br>
 29 = Int <br>
 30 = IRet<br>
-50 = End	Load the value into the AC<br>
+50 = End	Load the value into the AC
 
 
 
