@@ -20,8 +20,8 @@ Models the behavior of CPU and memory using inter-process communication in C to 
 ### Memory
    It will consist of 2000 integer entries, 0-999 for the user program, 1000-1999 for system code.<br>
    It will support two operations:<br>
-       read(address) -  returns the value at the address<br>
-       write(address, data) - writes the data to the address<br>
+       1. read(address) -  returns the value at the address<br>
+       2. write(address, data) - writes the data to the address<br>
    Memory will read an input file containing a program into its array, before any CPU fetching begins.<br>
    Note that the memory is simply storage; it has no real logic beyond reading and writing.<br>
  
