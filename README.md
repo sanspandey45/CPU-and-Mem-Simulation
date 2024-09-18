@@ -26,18 +26,19 @@ Models the behavior of CPU and memory using inter-process communication in C to 
    Note that the memory is simply storage; it has no real logic beyond reading and writing.<br>
  
  ### Timer
-     A timer will interrupt the processor after every X instructions, where X is a command-line parameter.<br>
-     The timer is always counting, whether in user mode or kernel mode.<br>
+A timer will interrupt the processor after every X instructions, where X is a command-line parameter.
+The timer is always counting, whether in user mode or kernel mode.
+
 
 ### Interrupt processing
-     There are two forms of interrupts:  the timer and a system call using the int instruction.<br>
-     In both cases the CPU should enter kernel mode.<br>
-     The stack pointer should be switched to the system stack.<br>
-     The SP and PC registers (and only these registers) should be saved on the system stack by the CPU.<br>
-     The handler may save additional registers. <br>
-     A timer interrupt should cause execution at address 1000.<br>
-     The int instruction should cause execution at address 1500.<br>
-     The iret instruction returns from an interrupt.<br>
-     Interrupts should be disabled during interrupt processing to avoid nested execution.<br>
-     To make it easy, do not allow interrupts during system calls or vice versa<br>
+There are two forms of interrupts:  the timer and a system call using the int instruction.<br>
+In both cases the CPU should enter kernel mode.<br>
+The stack pointer should be switched to the system stack.<br>
+The SP and PC registers (and only these registers) should be saved on the system stack by the CPU.<br>
+The handler may save additional registers. <br>
+A timer interrupt should cause execution at address 1000.<br>
+The int instruction should cause execution at address 1500.<br>
+The iret instruction returns from an interrupt.<br>
+Interrupts should be disabled during interrupt processing to avoid nested execution.<br>
+To make it easy, do not allow interrupts during system calls or vice versa<br>
 
