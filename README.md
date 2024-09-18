@@ -42,3 +42,41 @@ The iret instruction returns from an interrupt.<br>
 Interrupts should be disabled during interrupt processing to avoid nested execution.<br>
 To make it easy, do not allow interrupts during system calls or vice versa<br>
 
+### Instruction Set
+
+Instruction set
+
+1 = Load value<br>
+2 = Load addr<br>
+3 = LoadInd addr   <br>
+4 = LoadIdxX addr<br>
+5 = LoadIdxY addr<br>
+6 = LoadSpX<br>
+7 = Store addr<br>
+8 = Get <br>
+9 = Put port<br>
+10 = AddX<br>
+11 = AddY<br>
+12 = SubX<br>
+13 = SubY<br>
+14 = CopyToX<br>
+15 = CopyFromX<br>
+16 = CopyToY<br>
+17 = CopyFromY<br>
+18 = CopyToSp<br>
+19 = CopyFromSp   <br>
+20 = Jump addr<br>
+21 = JumpIfEqual addr<br>
+22 = JumpIfNotEqual addr<br>
+23 = Call addr<br>
+24 = Ret <br>
+25 = IncX <br>
+26 = DecX <br>
+27 = Push<br>
+28 = Pop<br>
+29 = Int <br>
+30 = IRet<br>
+50 = End	Load the value into the AC<br>
+
+
+
