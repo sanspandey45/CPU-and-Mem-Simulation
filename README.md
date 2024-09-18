@@ -44,8 +44,6 @@ To make it easy, do not allow interrupts during system calls or vice versa<br>
 
 ### Instruction Set
 
-Instruction set
-
 1 = Load value<br>
 2 = Load addr<br>
 3 = LoadInd addr   <br>
